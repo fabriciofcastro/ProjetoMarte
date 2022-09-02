@@ -1,0 +1,84 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "jest": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "airbnb",
+        "prettier/@typescript-eslint",
+        "prettier/standard",
+        "prettier/react",
+        "plugin:prettier/recommended",
+        "prettier"
+    ],
+    "parser": "@typescript-eslint/parser",
+
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": false
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint",
+      "prettier",
+      "eslint-plugin-import-helpers",
+      "import"
+    ],
+    "rules": {
+      "space-before-function-paren": 1,
+      "comma-dangle": ["error", "always-multiline"],
+      "semi": "error",
+      "prettier/prettier": "error",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/react-in-jsx-scope": "on",
+      "react/display-name": "on",
+      "react/prop-types": "on",
+      "@typescript-eslint/explicit-module-boundary-types": "on",
+      "@typescript-eslint/camelcase": "on",
+      "@typescript-eslint/no-empty-interface": "on",
+      "@typescript-eslint/explicit-function-return-type": "on",
+      "@typescript-eslint/explicit-member-accessibility": "on",
+      "@typescript-eslint/indent": "on",
+      "@typescript-eslint/member-delimiter-style": "on",
+      "@typescript-eslint/no-explicit-any": "on",
+      "@typescript-eslint/no-var-requires": "on",
+      "@typescript-eslint/no-use-before-define": "on",
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "no-console": [
+        "warn",
+        {
+          "allow": ["warn", "error"]
+        }
+      ],
+      "import/no-duplicates": ["error", { "considerQueryString": true }],
+      "import-helpers/order-imports": [
+        "warn",
+        {
+          "newlinesBetween": "always",
+          "groups": [
+            ["/^react/"],
+            ["module"],
+            ["/^~//"],
+            ["parent", "sibling", "index"]
+          ],
+          "alphabetize": { "order": "asc", "ignoreCase": true }
+        }
+      ]
+    }
+}

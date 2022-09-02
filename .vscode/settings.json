@@ -1,0 +1,8 @@
+{
+    "git.ignoreLimitWarning": true,
+    "editor.formatOnSave": true,
+    "[typescript, javascript, json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+}
