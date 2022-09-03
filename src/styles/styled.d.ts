@@ -1,7 +1,5 @@
 import 'styled-components'
-
 import theme from './theme'
-import spaceY from './themes/spaceY'
 
 export type Theme = typeof theme
 
@@ -10,21 +8,6 @@ declare module 'styled-components' {
       title: string
 
       Colors: {
-        background: string,
-        text: string,
-        primary: string
-      }
-
-  }
-}
-
-export type SpaceY = typeof spaceY
-
-declare module 'styled-componets' {
-  export interface DefaultTheme extends SpaceY {
-       title: string,
-
-       Colors: {
         space:  string,
         spaceLigth: string
         spaceDark: string,
@@ -45,7 +28,10 @@ declare module 'styled-componets' {
         background: string,
         backgroundSection: string,
         backgroundForm: string,
-       }
-
+      }
   }
 }
+
+
+
+

@@ -1,17 +1,16 @@
-import { ThemeProvider } from 'styled-components'
-import GlobalStyle from '../styles/global'
-import spaceY from '~/styles/themes/spaceY'
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from '../styles/global';
+import theme from '~/styles/themes/theme';
 
-
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return(
-      <ThemeProvider theme={spaceY}>
-          <Component {...pageProps} />
-          <GlobalStyle />
-      </ThemeProvider>
-  )
+  return (
+    <ThemeProvider theme={theme}>
+      <Component {...pageProps} />
+      <GlobalStyle />
+    </ThemeProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;
