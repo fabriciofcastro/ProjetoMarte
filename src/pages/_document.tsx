@@ -8,6 +8,8 @@ import Document, {
   NextScript
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+
+
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext
@@ -37,8 +39,12 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-          <meta charSet="utf-8" />{' '}
+        <link rel="icon" type="image/x-icon" href="../../public/images/icon-flag.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&display=swap" rel="stylesheet" />
         </Head>
+
         <body>
           <Main />
           <NextScript />

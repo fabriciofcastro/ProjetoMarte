@@ -2,8 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
+
 :root {
    font-size: 62.5%;
+   font-family: 'Heebo' sans-serif;
 }
 
 *,
@@ -34,6 +36,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+body {
+  background-color: ${props => props.theme.Colors.background};
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
