@@ -10,7 +10,7 @@ export default function Abount() {
 
       </Head>
       <S_Abount>
-        <Imagem src='../../../public/images/stars.jpg' alt='sadsa'/>
+          
 
       </S_Abount>
 
