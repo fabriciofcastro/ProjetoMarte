@@ -1,40 +1,33 @@
 import styled from 'styled-components';
-
+import Planeta from '../../../public/images/home-mars-right.svg'
 
 export const SHome = styled.div`
-  height: 81.6rem;
-  width: 121.8rem;
-  margin: 0 auto;
-  position: relative;
-  z-index: 10;
+  width: 100vw;
+  height:  81.6rem;
+  background-image: url(${Planeta.src});
+  background-repeat: no-repeat;
+  background-position: 121.11rem 1.6rem;
 `
 
-export const ImgPlanet = styled.div`
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    z-index: -1;
-    width: 50.5rem;
-    height: 56.3rem;
+export const ContentBox = styled.div`
+   height: 81.6rem;
+   width: 121.8rem;
+   margin: 0 auto;
 `
 
 export const SHeader = styled.div`
     width: 100%;
     height: 8.9rem;
     padding: 2.4rem 0;
-
-
 `
 export const Slogan = styled.div`
   width: 81.5rem;
   height: 35.9rem;
-  font-family: 'Heebo';
   color: #FFF;
   margin: 9.5rem 0 11.1rem 0;
 
   h5 {
     color: #F5D15F;
-    font: 500 1.8rem 'Heebo';
     letter-spacing: .4rem;
     margin-bottom: .8rem;
   }
@@ -62,7 +55,7 @@ export const Experiencia = styled.section`
 
 export const Foguete = styled.section`
     font: 400 1.6rem 'Heebo';
-    color: ${({theme}) => theme.Colors.gray05};
+    color: ${({ theme }) => theme.Colors.gray05};
 `
 
 export const Missao = styled(Foguete)`

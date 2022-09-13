@@ -19,15 +19,15 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
+          enhanceApp: App => props => sheet.collectStyles(<App { ...props } />)
         });
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         styles: (
           <>
-            {initialProps.styles}
-            {sheet.getStyleElement()}
+            { initialProps.styles }
+            { sheet.getStyleElement() }
           </>
         )
       };
@@ -39,10 +39,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-        <link rel="icon" type="image/x-icon" href="../../public/images/icon-flag.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com"/>
-        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;600&display=swap" rel="stylesheet" />
+
         </Head>
 
         <body>

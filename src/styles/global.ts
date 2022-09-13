@@ -2,7 +2,6 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 
-
 :root {
    font-size: 62.5%;
    font-family: 'Heebo' sans-serif;
@@ -39,6 +38,7 @@ time, mark, audio, video {
 
 body {
   background-color: ${props => props.theme.Colors.background};
+
 }
 
 /* HTML5 display-role reset for older browsers */

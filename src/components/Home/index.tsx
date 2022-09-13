@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { SHome, SHeader, Slogan, Experiencia, Foguete, Exclusiva, Missao } from './style';
+import { SHome, SHeader, Slogan, Experiencia, Foguete, Exclusiva, Missao, ContentBox } from './style';
 import Logo from '../../../public/images/logo-space-y.svg'
 import { Button } from '../Button/Button';
 import foguete from '../../../public/images/icon-rocket.svg'
@@ -14,9 +14,11 @@ export default function Header() {
     <>
       <Head>
         <title>Spece Y - Seu destino para Marte</title>
+        <meta property='org:title' content='Spece Y - Seu destino para Marte' key='title' />
       </Head>
 
       <SHome >
+      <ContentBox>
         <SHeader>
           <Image src={ Logo } alt="Logo space y" />
         </SHeader>
@@ -49,7 +51,7 @@ export default function Header() {
             </p>
           </Exclusiva>
         </Experiencia>
-
+        </ContentBox>
       </SHome>
     </>
   )

@@ -25,7 +25,7 @@ const theme = {
     backgroundSection: 'linear-gradient(180deg, #040327 0%, #0D0E13 24.49%)',
     backgroundForm: ' #0E0D40',
     bgButton: "#E85937",
-    Imagem: '../../../public/images/stars.jpg'
+    colorTitleH3: '#F5D15F'
   },
 
 

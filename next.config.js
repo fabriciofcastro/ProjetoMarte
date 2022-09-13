@@ -7,7 +7,10 @@ const nextConfig = {
 module.exports = nextConfig
 
 module.exports = {
-  optimizeFonts: false,
+  optimizeFonts: true,
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     forceSwcTransforms: true,
   }

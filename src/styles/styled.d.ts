@@ -2,21 +2,6 @@ import { StaticImageData } from 'next/image'
 import 'styled-components'
 import theme from './theme'
 
-declare module "react" {
-  interface ImgHTMLAttributes<T> extends HTMLAttributes<T> {
-    alt?: string;
-        loading?: "eager" | "lazy" | "auto"
-        crossOrigin?: "anonymous" | "use-credentials" | "";
-        decoding?: "async" | "auto" | "sync";
-        height?: number | string;
-        sizes?: string;
-        src?: string;
-        srcSet?: string;
-        useMap?: string;
-        width?: number | string;
-  }
-}
-
 
 export type Theme = typeof theme
 
@@ -46,7 +31,7 @@ declare module 'styled-components' {
         backgroundSection: string,
         backgroundForm: string,
         bgButton: string,
-        Imagem: string
+        colorTitleH3: string
       }
 
       Imag: {
