@@ -11,6 +11,7 @@ export const SAbount = styled.div`
   background-image: url(${start.src});
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 `
 /**
  *   Box Description
@@ -62,6 +63,7 @@ export const ContainerSlider = styled.div`
     width: 125rem;
     height: 35.3rem;
     display: flex;
+    margin: 0 auto;
 `
 export const LogoAbount = styled.img`
     width: 16.2rem;
@@ -76,7 +78,7 @@ export const P_Text = styled.p`
     margin-bottom: 1.7rem;
 `
 
-export const Achor = styled.a `
+export const Achor = styled.a`
     font: bold 1.8rem 'Heebo';
     color: #FF8C70;
 `
@@ -91,15 +93,18 @@ export const BoxTextSlider = styled.section`
 `
 
 export const ContainerSliderImg = styled.div`
-    width: 34.5rem;
+    width: 105rem;
     height: 35.3rem;
     display: flex;
-
+    gap: 6rem;
+    position: relative;
 `
 export const ImgSlider = styled.img`
     border-radius: 1rem;
     width: 34rem;
     height: 35.3rem;
+    position: relative;
+    left: 17rem;
 `
 
 

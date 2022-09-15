@@ -3,13 +3,23 @@ import foto1 from '../../../public/images/gallery-1.jpg'
 import foto2 from '../../../public/images/gallery-2.jpg'
 import foto3 from '../../../public/images/gallery-3.jpg'
 import logoWhite from '../../../public/images/logo-space-y.svg'
-import { SAbount, BoxText, BoxDescript, TitleH3, TitleH1, ContainerSlider, BoxTextSlider, ImgSlider, P_Text, ContainerSliderImg, Achor, LogoAbount } from './styled'
-
+import {
+  SAbount,
+  BoxText,
+  BoxDescript,
+  TitleH3,
+  TitleH1,
+  ContainerSlider,
+  BoxTextSlider,
+  ImgSlider,
+  P_Text,
+  ContainerSliderImg,
+  Achor,
+  LogoAbount
+} from './styled'
 
 
 export default function Abount() {
-
-
 
   return (
     <>
@@ -47,14 +57,15 @@ export default function Abount() {
               tornar a humanidade
               multiplanetária.
             </P_Text>
-            <Achor target="_blank" href="https://www.spacex.com/">Increva-se agora
+            <Achor target="_blank" href="https://www.spacex.com/">
+              Increva-se agora
             </Achor>
 
           </BoxTextSlider>
           <ContainerSliderImg>
-            <ImgSlider src={ foto1.src } alt="" />
-            <ImgSlider src={ foto2.src } alt="" />
-            <ImgSlider src={ foto3.src } alt="" />
+            <ImgSlider src={ foto1.src } alt="Acampamento em marte, com instalação de exploração" />
+            <ImgSlider src={ foto2.src } alt="Acampamento em marte, com sondas e robos de exploração" />
+            <ImgSlider src={ foto3.src } alt="Veiculo de coleta do solo" />
           </ContainerSliderImg>
         </ContainerSlider>
       </SAbount>
