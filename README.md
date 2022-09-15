@@ -1,4 +1,4 @@
-# Desenvolvido junto birobirobiro (https://www.youtube.com/watch?v=2ex7C6FkMxg&list=PLbZGSauQrEzSJRTFA6tLLtGSrkn7Tybxn&index=2&t=2037s&ab_channel=birobirobiro)
+# Desenvolvido para fins de testar meus conhecimento
 
 ## Tecnologias utilizadas
 

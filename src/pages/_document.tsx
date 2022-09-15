@@ -8,6 +8,7 @@ import Document, {
   NextScript
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import head from 'next/head'
 
 
 export default class MyDocument extends Document {
@@ -39,8 +40,11 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-        
+
         </Head>
+        <head>
+          
+        </head>
 
         <body>
           <Main />
