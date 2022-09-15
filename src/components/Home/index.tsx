@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import { SHome, SHeader, Slogan, Experiencia, Foguete, Exclusiva, Missao, ContentBox } from './style';
 import Logo from '../../../public/images/logo-space-y.svg'
-import { Button, LinkEscrevase } from '../Button/Button';
+import { ButtonLink } from '../Button/Button';
 import foguete from '../../../public/images/icon-rocket.svg'
 import bandeira from '../../../public/images/icon-flag.svg'
 import telescope from '../../../public/images/icon-telescope.svg'
@@ -30,7 +30,7 @@ export default function Header() {
               12/03/2028. Iscreva-se em nossa lista de espera.
             </p>
 
-             <LinkEscrevase href='/form'> Inscreva-se agora </LinkEscrevase>
+             <ButtonLink href='/#' > Inscreva-se agora </ButtonLink>
 
           </Slogan>
           <Experiencia>

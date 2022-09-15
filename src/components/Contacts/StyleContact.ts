@@ -31,12 +31,14 @@ export const BoxForm = styled.section`
     border-radius: 2rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    border: 1px solid white
 `
 
 export const ContentBox = styled.section`
     width: 41.7rem;
     height: 62rem;
+    margin-top: 3.9rem;
+    
 `
 
 export const TitleForm = styled.h2`
@@ -47,7 +49,9 @@ export const TitleForm = styled.h2`
 `
 export const Text_P = styled.p`
      color: #fff;
-     font: normal 1.6rem 'Heebo'
+     font: normal 1.6rem 'Heebo';
+     margin-bottom: 3.2rem;
+     width: 28rem;
 `
 
            /* Caixa do foguete */

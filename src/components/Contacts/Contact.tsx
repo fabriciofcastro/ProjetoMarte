@@ -1,9 +1,17 @@
 import Image from "next/image"
-import { ContainerBoxForm, ContentContact, BoxForm, SContact, BoxRocket, ContentBox, TitleForm, Text_P, ContainerFieldset } from "./StyleContact"
+import {
+       ContainerBoxForm,
+       ContentContact,
+       BoxForm, SContact,
+       BoxRocket,
+       ContentBox,
+       TitleForm,
+       Text_P
+      } from "./StyleContact"
 import ticket from '../../../public/images/icon-ticket.svg'
-import { LinkMinhaVagaForm } from "../Button/Button"
 import Form from "./Form/Form"
-import { Chekts } from "./Form/FormStyle"
+import { ButtonForm } from "../Button/Button"
+
 
 export default function Contact() {
 
@@ -18,13 +26,13 @@ export default function Contact() {
                 Garanta sua viagem para a primeira viagem
               </TitleForm>
               <Text_P>
-                Preencha os campos abaixo apara entrar na lista de espera
+                Preencha os campos baixo para entrar na lista de espera
               </Text_P>
 
               <Form />
-              <LinkMinhaVagaForm href="/#">
+              <ButtonForm type="button">
                 Garantir minha vaga
-              </LinkMinhaVagaForm>
+              </ButtonForm>
             </ContentBox>
 
           </BoxForm>
