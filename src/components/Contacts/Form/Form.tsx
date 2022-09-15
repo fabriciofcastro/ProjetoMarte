@@ -10,7 +10,7 @@ const Form = () => {
 
         <Labels htmlFor="email">E-mail</Labels>
         <Inputs type='email' form="email" />
-
+    
         <Labels htmlFor="phone">Telefone</Labels>
         <Inputs type='tel' id="phone" />
         <GrupChecked>

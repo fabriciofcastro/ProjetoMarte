@@ -18,11 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
 
       <ThemeProvider theme={ theme }>
-        <Layout>
-          <Component { ...pageProps } />
-        </Layout>
+        <Component { ...pageProps } />
         <GlobalStyle />
-
       </ThemeProvider>
 
     </>
