@@ -39,7 +39,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="pt-br">
         <Head>
-
+        
         </Head>
 
         <body>

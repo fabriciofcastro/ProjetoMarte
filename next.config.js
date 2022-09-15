@@ -10,6 +10,7 @@ module.exports = {
   optimizeFonts: true,
   images: {
     unoptimized: true,
+    allowFutureImage: true
   },
   experimental: {
     forceSwcTransforms: true,

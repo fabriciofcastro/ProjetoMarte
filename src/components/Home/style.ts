@@ -2,11 +2,12 @@ import styled from 'styled-components';
 import Planeta from '../../../public/images/home-mars-right.svg'
 
 export const SHome = styled.div`
-  width: 100vw;
+  width: 100%;
   height:  81.6rem;
   background-image: url(${Planeta.src});
   background-repeat: no-repeat;
-  background-position: 121.11rem 1.6rem;
+  background-position: 100% 1.6rem;
+  font-family: 'Heebo';
 `
 
 export const ContentBox = styled.div`
@@ -30,11 +31,11 @@ export const Slogan = styled.div`
     color: #F5D15F;
     letter-spacing: .4rem;
     margin-bottom: .8rem;
+    font-size: 1.8rem;
   }
 
     h1 {
       font: bold 6.2rem 'Heebo';
-
     }
 
     p {
