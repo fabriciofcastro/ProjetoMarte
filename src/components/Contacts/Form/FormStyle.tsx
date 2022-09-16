@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerForm = styled.form`
 
 `
-   
+
 /**
  *
  *       S t y l e    L a b e l
@@ -31,6 +31,12 @@ export const Inputs = styled.input`
    font-size: 1.8rem;
    color: #fff;
    padding-left: 1rem;
+
+
+        :focus {
+          border: none;
+          background-color: none;
+        }
 `
 
 /**

@@ -12,12 +12,11 @@ export default function Header() {
 
   return (
     <>
+      <SHome >
       <Head>
         <title>Spece Y - Seu destino para Marte</title>
         <meta property='org:title' content='Spece Y - Seu destino para Marte' key='title' />
-      </Head>
-
-      <SHome >
+        </Head>
         <ContentBox>
           <SHeader>
             <Image src={ Logo } alt="Logo space y" />

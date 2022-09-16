@@ -13,7 +13,7 @@ export const BgNuvem = styled.section`
   height: 27.5rem;
   background-image: url(${nuvem.src});
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: 100%;
 
 `
 export const InforFooter = styled.section`

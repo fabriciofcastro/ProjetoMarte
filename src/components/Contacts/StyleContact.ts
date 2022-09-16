@@ -7,7 +7,7 @@ export const SContact = styled.section`
   height: 107rem;
   background-image: url(${background.src}) ;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
 `
                  /* Caixa Pai */
 export const ContentContact = styled.section`
@@ -38,7 +38,7 @@ export const ContentBox = styled.section`
     width: 41.7rem;
     height: 62rem;
     margin-top: 3.9rem;
-    
+
 `
 
 export const TitleForm = styled.h2`
